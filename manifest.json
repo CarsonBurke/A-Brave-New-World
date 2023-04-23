@@ -6,7 +6,7 @@
     "display": "standalone",
     "description": "PWA description",
     "icons": [{
-        "src": "materials/images/carsonIcon.png",
+        "src": "materials/images/icon.png",
         "type": "image/png",
         "sizes": "1080x1080"
     }]
