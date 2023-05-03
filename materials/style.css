@@ -40,6 +40,21 @@ body::-webkit-scrollbar-thumb:hover {
     background: #36394580;
 }
 
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1000;
+    transition: 0.3s;
+}
 
 /*NAVBAR*/
 
@@ -593,7 +608,47 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .heroBackgroundImage {
-    background: linear-gradient( rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url("images/image1.jpg");
+    background: linear-gradient( rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url("images/burj.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.fordBG {
+    background: linear-gradient( rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url("images/ford.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.sexBG {
+    background: linear-gradient( rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url("images/obscenityWide.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.conditioningBG {
+    background: linear-gradient( rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url("images/epsilonWide.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.somaBG {
+    background: linear-gradient( rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url("images/soma.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.activitiesBG {
+    background: linear-gradient( rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url("images/electromagneticGolfing.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -648,10 +703,13 @@ body::-webkit-scrollbar-thumb:hover {
 
 .heroText {
     font-size: 18px;
-    width: 80%;
     margin: 30px auto;
     margin-bottom: 0;
     font-weight: 300;
+}
+
+.heroText80 {
+    width: 80%;
 }
 
 @media all and (max-width: 600px) {
@@ -685,7 +743,7 @@ body::-webkit-scrollbar-thumb:hover {
     justify-content: space-around;
     width: 90%;
     padding: 0 5%;
-    align-items: flex-start;
+    align-items: stretch;
 }
 
 @media all and (max-width: 1150px) {

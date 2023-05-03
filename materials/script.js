@@ -196,3 +196,48 @@ function slideBack() {
 }
 
 //
+
+setInterval(header, 1500)
+
+function header() {
+
+    const element = document.getElementById('heroSlider')
+    if (element) {
+
+        slideForward()
+    }
+}
+
+//
+
+let videoOn = false
+
+function enableVideo() {
+    console.log('enable')
+    document.addEventListener('click', closeVideo)
+
+    const elements = document.getElementsByClassName('video')
+    for (const element of elements) {
+
+        element.classList.remove('hidden')
+    }
+}
+
+function closeVideo(event) {
+    console.log('close')
+    console.log(event.target)
+    console.log('parent', event.target.parentNode)
+
+    if (event.target.classList.contains('videoAllow') || (event.target.parentNode && event.target.parentNode.classList.contains('videoAllow'))) {
+
+        return
+    }
+
+    document.removeEventListener('click', closeVideo)
+
+    const elements = document.getElementsByClassName('video')
+    for (const element of elements) {
+
+        element.classList.add('hidden')
+    }
+}
